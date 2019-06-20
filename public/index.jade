@@ -1,0 +1,581 @@
+.ui.grid
+	.row
+		.column
+			.ui.large.fixed.inverted.center.aligned.stackable.menu
+				.header.item.with.dignity 
+					i.fa.fa-gears.fa-2x
+					| &nbsp; Engenho Novo LLC
+				a.item
+					#hide-sidebar.launch.button
+						i.fa.fa-bars
+						| &nbsp;  Menu
+				.ui.computer.only.dropdown.item 
+					i.large.code.icon
+					| Materialismo
+					i.dropdown.icon
+					.menu.computer.only(style='background-color: lightyellow; border: 1px solid black;')
+						a.computer.only.item 
+							i.large.code.icon
+							| Material Design Components
+						a.computer.only.item
+							i.large.lightning.icon
+							| CE Material Design
+						a.computer.only.item.active 
+							i.large.html5.icon
+							| Materialize CSS
+						a.computer.css.item 
+							i.large.github.icon
+							| Bootstrap Material
+						a.item.computer.only.item 
+							i.large.microphone.icon
+							| Material Bootstrap
+						a.item.computer.only 
+							i.large.strikethrough.icon
+							| Material Design Lite
+						a.item.computer.only 
+							i.large.signal.icon
+							| Daemonite Material
+						a.item.computer.only 
+							i.large.sitemap.icon
+							| Vuetify Material
+						a.item.computer.only 
+							i.large.comment.outline.icon
+							| Material Stylus
+						a.item.computer.only 
+							i.large.comments.outline.icon
+							| Framaterial on Harp
+
+	.tablet.mobile.only.row
+		.column
+			.ui.large.inverted.fixed.menu
+				a#hamburger-link.item
+					i.fa.fa-gears.fa-lg
+					| &nbsp; Engenho Novo LLC
+
+.ui.pushable.segment
+
+	.ui.sidebar.vertical.labeled.inverted.icon.menu
+		a.item(style='background-color: firebrick; color: white;')
+			i.configure.icon
+			| Disciplines
+
+		a.item(style='margin-top: 20px;')
+			i.settings.icon
+			| Semantics
+		a.item 
+			i.large.strikethrough.icon
+			| Syntactics
+		a.item 
+			i.code.icon
+			| Grammatology
+		a.item 
+			i.microphone.icon
+			| Phonology
+		a.item 
+			i.text.telephone.icon
+			| Philology
+		a.item 
+			i.sitemap.icon
+			| Paleography
+		a.item 
+			i.signal.icon
+			| Phenomenology
+
+	.my-content.pusher
+		.ui.segment(style="padding-top: 150px;")
+			.ui.one.column.stackable.grid
+				h1.ui.center.aligned.icon.header(style="font-size: 40px;")
+					i.fas.fa-chess.fa-5x
+					.content
+						.ui.hidden.divider
+						| Tudo Menos a Pia da Cozinha
+				.ui.hidden.divider
+				.ui.text.container
+					.ui.error.message(style='margin: 48px;')
+						i.close.icon
+						h3.ui.medium.center.aligned.icon.header
+						.ui.left.aligned.content(style="text-align: left;")
+							i.material-icons beach_access
+							| &nbsp; Engenho Novo LLC
+							p(style="text-align: left; margin-top:15px;") This is an &laquo;all but the baby in the bathwater&raquo; page. Adeus, mundo imundo! Here we place all the Semantic components we have gotten to work well for us. These components will serve as kickstarts for future projects. Now if you want to, go ahead and dismiss this stupid message. The transition should exihibit a bit of a boing effect.
+
+						script.
+							$('.message .close')
+							.on('click', function() {
+							$(this)
+							.closest('.message')
+							.transition('horizontal flip')
+							;
+							})
+							;
+
+
+			.ui.three.column.stackable.three.column.center.aligned.grid(style="margin-top: 50px;")
+				.column
+					h2.center.aligned.ui.header
+						i.fa.fa-gears.fa-lg(style='margin-right: 12px;')
+						| Navegação Lateral
+					h3.ui.medium.header Bem Frustrante no Começo 
+					p.text-center
+						img(src='img/titannical-steaming.jpg', style='max-width: 100%;')
+					p.text-left
+						| Mea ex modo quaeque deseruisse, quo minim vivendum necessitatibus no. Vix elit ceteros in, an est appareat partiendo, quem lorem choro no vel. Gubergren inciderint in qui, sea in legimus accumsan legendos. 
+					p.text-center
+						.ui.large.grey.icon.button(style='border: 1px solid black;')
+							i.television.icon
+							| &nbsp; Damn That Television
+					h3.ui.header Itemization
+					.ui.items
+						.item
+							.image
+								img(src='')
+
+				.column
+					h2.center.aligned.ui.header
+						i.plug.icon(style='margin-right: 12px;')
+						| Uma Página à Toa	
+					h3.ui.medium.header
+						| Moqueca de Diversas Ingredientes
+					p.text-center
+						img(src='img/hindenburger.jpg', style='max-width: 100%')
+					p.text-left
+						| Mea ex modo quaeque deseruisse, quo minim vivendum necessitatibus no. Vix elit ceteros in, an est appareat partiendo, quem lorem choro no vel.  
+
+					.ui.large.secondary.icon.button(style='border: 1px solid black;')
+							i.mercury.icon
+							| &nbsp; Air Can Hurt You Too
+
+				.column
+					h2.center.aligned.ui.header
+						i.subway.icon
+						| &nbsp; Esconde-Esconde
+					h3.ui.medium.header
+						| Faça uma Navegação-Hambúrguer
+					p.text-center
+						img(src='img/linotype1.jpg', style='max-width: 100%')
+					p.text-left
+						#hide-sidebar.ui.large.default.icon.launch.button(style='border: 1px solid black;')
+							i.strikethrough.icon
+							| &nbsp; Linotype ao Gogo
+
+			.ui.three.column.stackable.three.column.grid
+
+				.column
+					p.text-center
+						i.huge.food.icon
+					h1.ui.center.aligned.header.with.dignity Umas Sanfonas Aqui
+					.ui.styled.accordion(style='color: black; border: none;')
+						.title
+							h3.with.dignity
+								i.dropdown.icon
+								| Dúvidas Sobre o Linux
+						.content
+							| Quatro perguntas que vários usuários tanto novos como antigos sempre têm
+							.accordion
+								.title.with.dignity
+									i.dropdown.icon
+									| Escolhendo um &laquo;Distro&raquo;
+								.content
+									p Teste-o Numa Chave USB
+									.accordion
+										.title.with.dignity
+											i.dropdown.icon
+											| Chave ou Disco?
+										.content
+											| Queimando o Aruivo ISO
+										.title.with.dignity
+											i.dropdown.icon
+											| Inicializando da Chave
+										.content
+											| Rodeando o OS para iniciar de um disco exterior
+								.title.with.dignity
+									i.dropdown.icon
+									| A Instalação Mesma
+								.content
+									| Entrando Dados e Preferências
+								.title.with.dignity
+									i.dropdown.icon
+									| Formatando o HD
+								.content
+									| Se você quiser você pode criar uma nova partição facilmente com Calamares ou GParted
+								.title.with.dignity
+									i.dropdown.icon
+									| Instalando Software
+								.content
+									| Existem vários &laquo;package managers&raquo; para a instalação e atualização de software para o seu sistema Linux 
+						.title
+							h3.with.dignity
+								i.dropdown.icon
+								|  Os Quatro Ramones
+						.content
+							p One Two Three Four!
+							.accordion
+								.title.with.dignity
+									i.dropdown.icon
+									|  Joey Ramone
+								.content
+									p Ele fazia algo um pouco parecido com cantar
+									.accordion
+										.title.with.dignity
+											i.dropdown.icon
+											| A Vida  de Joey
+										.content
+											| Uma vida cheia de barulho
+										.title.with.dignity
+											i.dropdown.icon
+											| A Morte de Joey
+										.content
+											| Tristemente foi uma vida não muito longa devido a uma doença
+								.title.with.dignity
+									i.dropdown.icon
+									|   Johnny Ramone
+								.content
+									| Guitarrista barulhento que nunca aprendeu o sentido da palavra &laquo;pianíssimo&raquo;
+								.title
+									i.dropdown.icon
+									| Marky Ramone
+								.content
+									| Marky eu acho que era o baterista
+								.title
+									i.dropdown.icon
+									| Dee Dee Ramone
+								.content
+									| Eu acho que Dee Dee tocava o 	baixo
+						.title
+							h3.with.dignity
+								i.dropdown.icon
+								|  Os Quatro da Abba
+						.content
+							p Aquela banda sueca de "Waterloo" e "Take a Chance on Me" e "Mamma Mia"
+							.accordion
+								.title
+									i.dropdown.icon
+									|  Smorgasbord Man Number One
+								.content
+									p Ele fazia algo um pouco parecido com cantar
+									.accordion
+										.title
+											i.dropdown.icon
+											| Smorgasbord Is Good
+										.content
+											| Uma vida cheia de barulho
+										.title
+											i.dropdown.icon
+											| Smorgasbord is Excellent
+										.content
+											| Tristemente foi uma vida não muito longa devido a uma doença
+								.title
+									i.dropdown.icon
+									| Smorgasbord Man Number Two
+								.content
+									| Guitarrista barulhento que nunca aprendeu o sentido da palavra Pianíssimo
+								.title
+									i.dropdown.icon
+									| Smorgasbord Woman Number One
+								.content
+									| Marky eu acho que era a baterista
+								.title
+									i.dropdown.icon
+									| Smorgasbord Woman Number Two
+								.content
+									| Eu acho que Dee Dee tocava o 	baixo
+						.title
+							h3.with.dignity
+								i.dropdown.icon
+								|  Os Quatro dos Beatles
+						.content
+							p Reis do yeah! yeah! yeah!
+							.accordion
+								.title
+									i.dropdown.icon
+									|  John Lennon
+								.content
+									p &laquo;Dá uma tuba pra ele e ele poderá tirar algo interessante dela&raquo;
+									.accordion
+										.title
+											i.dropdown.icon
+											| A Vida de John
+										.content
+											| Uma vida de criatividade atrevida e profunda
+										.title
+											i.dropdown.icon
+											| A Morte de John
+										.content
+											| Tristemente foi uma vida cortada no raiz por conta de um mentecapto com revólver na mão
+								.title
+									i.dropdown.icon
+									|   Paul McCartney
+								.content
+									| Compositor mestre e uma figura do &laquo;Trickster&raquo;. Tal como Pernilonga. Um &laquo;imp of the perverse&raquo;
+								.title
+									i.dropdown.icon
+									| George Harrison
+								.content
+									| Meu Beatle preferido. ele adorava todo tipo de instrumento de cordas desde o dobro até o sitar.
+									.accordion
+										.title A Vida de George
+										.content 
+											| Tocava guitarra e compunha umas lindas melodias, além de alguns dos &laquo;riffs&raquo; mais memoráveis de todos os tempos
+										.title A Morte de George
+										.content
+											| Um triste fim devido ao cáncer
+								.title
+									i.dropdown.icon
+									| Ringo Star
+								.content
+									| Ringo era o mais feliz dos Beatles. Se casou com uma supermodelo que nem o Rod Stewart.	
+
+
+					h2.text-center.with.dignity Dicas do Superusuário
+					h4.text-center.with.dignity O Texto Pode &laquo;Wrap&raquo;?
+					.ui.center.aligned.segment
+						.ui.default.icon.button(data-tooltip='Pregamos revolução! Venham junto conosco!', data-position="right center", data-variation="huge", data-inverted="true", data-container="body", style='border: 1px solid black;')
+							i.configure.icon
+							| &nbsp; Junte-se a Nós
+
+						.ui.hidden.divider
+
+						.ui.grey.icon.button(data-tooltip='Netflix é um app legal e eu estudo os seus interfaces', data-position="right center", data-variation="huge", data-inverted="true", data-container="body")
+							i.fire.icon
+							| &nbsp; Séries do Netflix
+
+						.ui.hidden.divider
+
+						.ui.red.icon.button.data-tooltip(data-tooltip='Amigo me baby and I will poke you back.', data-inverted='', data-position='right center')
+							i.rocket.icon
+							| &nbsp; Um Convite
+						br
+						br
+						.ui.default.icon.button.data-tooltip(data-tooltip='Precisamos de text wrap aqui ou de mudar o z-index?', data-inverted='false', data-position='right center', style='border: 1px solid black;')
+							i.code.icon
+							| &nbsp;  Embrulha-me
+
+				.column
+					p.text-center
+						i.fa.fa-coffee.fa-4x
+					h1.ui.bit.center.aligned.header Modus Tollens
+					h3.ui.gigantic.center.aligned.header Vinicius Modais
+					p.text-center
+						button#abra.ui.black.button Abra-se Sésamo
+
+						// First Modal Opens on Page Load or No Wait Not Anymore
+
+					script.
+						$(function(){
+						$("#test").click(function(){
+						$(".test").modal('show');
+						});
+						$(".test").modal({
+						closable: true
+						});
+						});
+
+					p.text-center
+						button#test.ui.button.grey.create_btn(type='button') Vinicius Modais
+
+						.ui.tiny.modal.test
+							i.close.icon
+							h2.ui.header.with.dignity
+								i.fa.fa-gears.fa-lg
+								| &nbsp; Engenho Novo LLC
+							.image.content
+								.ui.medium.image
+									img(src='img/typeset1.jpg')
+								.description
+									h3.ui.header
+										| A Galáxia de Gutenburgo
+									h4.ui.header O Fim do Escrivão Medieval
+									p 
+										| Ut paulo persius volutpat quo. Errem facete et has, nam an sonet vidisse omittantur. Ex est zril efficiantur consectetuer, regione nonumes id has, qui ipsum dicta deterruisset te. Sumo melius ut duo, eum an liber salutatus.
+									p
+										| What do you think of this dialogue box? I find it too wide but then that is just me on my desktop.
+							.actions
+								.ui.deny.center.aligned.large.black.icon.button
+									i.balance.icon
+									| &nbsp; Cronkite
+								.ui.right.center.text-aligned.large.primary.icon.button
+									i.settings.icon
+									| &nbsp; Reasoner
+
+						// Second Modal to Open on Abra-me Sésamo button
+
+						script.
+							$(function(){
+							$("#abra").click(function(){
+							$(".abra").modal('show');
+							});
+							$(".abra").modal({
+							closable: true
+							});
+							});
+
+
+						.ui.tiny.modal.abra
+							i.close.icon
+							.header.with.dignity
+								i.fa.fa-gears.fa-lg
+								| &nbsp; Engenho Novo LLC
+							.image.content
+								.ui.medium.image
+									img(src='img/hindenburger.jpg')
+								.description
+									h1.ui.gigantic.header
+										| Sambodia, My Sambodia
+									h4.ui.header São São Paulo Quanta Dor
+									p 
+										| Discreta deselegância. Ut paulo persius volutpat quo. Errem facete et has, nam an sonet vidisse omittantur.
+									p
+										| Triggering a modal with a button &mdash; what a triumph for me and my clumsy brain. Can I do the same with the hated sidebar?
+							.actions
+								.ui.deny.center.aligned.large.black.icon.button
+									i.music.icon
+									| &nbsp; Tom Zé
+								.ui.right.center.text-aligned.large.info.icon.button(style='border: 1px solid black;')
+									i.settings.icon
+									| &nbsp; Caetano Veloso
+
+						script.
+							$(function(){
+							$("#modally").click(function(){
+							$(".modally").modal('show');
+							});
+							$(".modally").modal({
+							closable: true
+							});
+							});
+
+					p.text-center
+						button#modally.ui.button.white.create_btn(type='button', style='border: 1px solid black') The Modally Blues
+
+					.ui.tiny.modal.modally
+						i.close.icon
+						h2.ui.header.with.dignity
+							i.fa.fa-gears.fa-lg
+							| &nbsp; Engenho Novo LLC
+						.image.content
+							.ui.medium.image
+								img(src='img/titannical-steaming.jpg')
+							.description
+								h3.ui.header
+									| Formulários e Outras Bugigangas
+								h4.ui.header Usos Para o Diálogo Modal
+								p 
+									| Já aprendi o modal no Semantic. Ut paulo persius volutpat quo. Errem facete et has, nam an sonet vidisse omittantur.
+								p
+									| Triggering a modal with a button &mdash; what a triumph for me and my columnsy brain. Can I do the same with the hated sidebar?
+						.actions
+							.ui.deny.center.aligned.large.black.icon.button
+								i.motorcycle.icon
+								| &nbsp; Jagger
+							.ui.right.center.text-aligned.large.bordered.icon.button
+								i.motorcycle.icon
+								| &nbsp; Richards
+
+
+
+				.column
+					p.text-center
+						i.fa.fa-glass.fa-4x
+					h1.ui.big.center.aligned.header Gênesis de Revelações
+					h3.ui.header.text-center The Stolen Bones
+
+					.ui.fade.reveal.image
+						.visible.content.mb-5
+							img.ui.large.bordered.image(src='img/stones68.jpg')
+						.hidden.content
+							img.ui.large.bordered.fluid.image(src='img/thewhofflag.jpg', style='max-width: 100%')
+
+					h3.ui.header.text-center.mt-5 Who the Fuck Are You?
+
+					.ui.fade.reveal.image
+						.visible.content
+							img.ui.large.bordered.image(src='img/thewhofflag.jpg', style='max-width: 100%')
+						.hidden.content
+							img.ui.large.bordered.image(src='img/stones68.jpg')
+
+		// SCRIPTS
+		script.
+			$(function(){
+			$("#test").click(function(){
+			$(".test").modal('show');
+			});
+			$(".test").modal({
+			closable: true
+			});
+			});
+
+		script.
+			$(function(){
+			$("#test2").click(function(){
+			$(".test2").mini.modal('');
+			});
+			$(".test2").modal({
+			closable: true
+			});
+			});
+
+
+		script.
+			$(function(){
+			$("#test").click(function(){
+			$(".test").modal('show');
+			});
+			$(".test").modal({
+			closable: true
+			});
+			});
+
+		script.
+			$('.ui.small.modal').modal('');
+
+		script.
+			$('.ui.tiny.modal').modal('');
+
+		script.
+			$('.ui.styled.accordion').accordion('');
+
+		script(type='text/javascript').
+			$(document).ready(function(){
+			$('#show-sidebar').click(function() {
+			$('#show-sidebar').hide();
+			$('.menu.sidebar').sidebar('toggle');
+			});
+			$('#hide-sidebar').click(function() {
+			$('#show-sidebar').show();
+			$('.menu.sidebar').sidebar('toggle');
+			});
+			});
+
+		script.
+			$(document).ready(function(){
+			$("#abra").click(function(){
+			$('.modal').modal('');
+			});
+			});	
+
+		script.
+			$(document).ready(function(){
+			$("#modally").click(function(){
+			$('.modal').modal('');
+			});
+			});	
+
+		script.
+			$(document).ready(function(){
+			$("#samboja	").click(function(){
+			$('.modal').modal('');
+			});
+			});	
+
+
+
+		script.
+			$(document).ready(function(){
+			$(this).scrollTop(0);
+			});
+
+		script.
+			$(document).ready(function(){
+			$(".ui.dropdown")
+			.dropdown()
+			});

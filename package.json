@@ -1,0 +1,33 @@
+{
+  "name": "harp-styled-semantic-sink",
+  "version": "0.0.0",
+  "description": "",
+  "dependencies": {
+    "surge": "^0.21.3"
+  },
+  "devDependencies": {
+    "browserify": "11.0.0",
+    "browserify-shim": "3.8.11",
+    "jshint": "^2.10.2",
+    "uglify": "0.1.5"
+  },
+  "browser": {
+    "jquery": "./bower_components/jquery/dist/jquery.js",
+    "bootstrap": "./bower_components/bootstrap/dist/js/bootstrap.js",
+    "modernizr": "./bower_components/modernizr/modernizr.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "bootstrap": {
+      "depends": [
+        "jquery:$"
+      ]
+    },
+    "modernizr": "Modernizr"
+  },
+  "scripts": {
+    "test": "node_modules/jshint/bin/jshint -c .jshintrc js/",
+    "build": "npm test && mkdir -p public/js && node_modules/browserify/bin/cmd.js js/main.js -t browserify-shim | node_modules/uglify-js/bin/uglifyjs -o public/js/main.min.js",
+    "dev": "npm test && mkdir -p public/js && node_modules/browserify/bin/cmd.js js/main.js -d -t browserify-shim > public/js/main.min.js"
+  }
+}
