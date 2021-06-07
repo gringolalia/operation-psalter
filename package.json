@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "I want to Surge this motherfucker",
   "dependencies": {
-    "harp": "^0.30.1",
+    "harp": "^0.40.3",
     "surge": "^0.21.3"
   },
   "devDependencies": {
